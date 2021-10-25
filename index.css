@@ -13,8 +13,9 @@ html,body{
 
 .container{
     display: grid;
-    grid-template-columns: 450px 250px;
-    grid-template-rows: 220px;
+    justify-items:center;
+    grid-template-columns: 610px 610px;
+    grid-template-rows: 130px 20px;
     grid-template-areas: "card1 card1"
                          "card2 card4"
                          "card3 card3";
@@ -23,7 +24,6 @@ html,body{
 }
 .div-card1{
    grid-area: card1;
-   margin-left: 32%;
 }
 .div-card2{
     grid-area: card2;
@@ -31,7 +31,6 @@ html,body{
  .div-card3{
     grid-area: card3;
     margin-top: 5%;
-    margin-left: 32%;
  }
  .div-card{
     grid-area: card4;
