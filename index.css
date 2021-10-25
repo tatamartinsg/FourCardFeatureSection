@@ -1,0 +1,33 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.div-card1, .div-card2, .div-card3, .div-card4{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 280px;
+    height: 200px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0fr 4fr;
+    grid-template-rows: 220px;
+    grid-template-areas: "card1 card1"
+                         "card2 card4"
+                         "card3 card3";
+}
+.div-card1{
+   grid-area: card1;
+}
+.div-card2{
+    grid-area: card2;
+ }
+ .div-card3{
+    grid-area: card3;
+ }
+ .div-card{
+    grid-area: card4;
+ }
