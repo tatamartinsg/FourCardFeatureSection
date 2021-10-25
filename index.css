@@ -13,20 +13,25 @@ html,body{
 
 .container{
     display: grid;
-    grid-template-columns: 0fr 4fr;
+    grid-template-columns: 450px 250px;
     grid-template-rows: 220px;
     grid-template-areas: "card1 card1"
                          "card2 card4"
                          "card3 card3";
+   justify-content: center;
+
 }
 .div-card1{
    grid-area: card1;
+   margin-left: 32%;
 }
 .div-card2{
     grid-area: card2;
  }
  .div-card3{
     grid-area: card3;
+    margin-top: 5%;
+    margin-left: 32%;
  }
  .div-card{
     grid-area: card4;
