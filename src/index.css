@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Kurenaido&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+   width: 100%;
+   background-image: url("../src/images/teste2.jpg");
+   /* background-size: cover; */
+
+}
+
+#section-principal{
+   /* background-color: rgb(255, 253, 248); */
+   background-image: url("../src/images/background2.jpg");
+   background-size: cover;
+   margin: 4% auto;
+   height: auto;
+   width: 76%;
+   box-shadow: -2px 4px 20px 8px rgb(204, 204, 199);
+}
+.container p{
+   font-weight: bold;
+   opacity: 0.7;
+   font-size: 15px;
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+div.div-img{
+   margin: 0;
+   text-align: right;
+   
+}
+#div-h-principal{
+   text-align: center;
+   margin-bottom: 4%;
+   padding-top: 45px;
+}
+#div-h-principal h1{
+   margin: auto;
+   font-size: 32px;
+   opacity: 0.6;
+}
+h1{
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+   font-weight: bold;
+}
+#div-h-principal h2{
+   margin: auto;
+   width: 40%;
+   font-size: 42px;
+   font-family: 'Zen Kurenaido', sans-serif;
+   font-weight: bold;
+   transition: ease .2s;
+}
+#div-h-principal h2:hover{
+   opacity: 0.6;
+}
+
+#div-h-principal p{
+   font-family: sans-serif;
+   margin: 20px auto;
+   width: 40%;
+   opacity: 0.6;
+}
+
+.div-card1, .div-card2, .div-card3, .div-card4{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 280px;
+    height: 200px;
+    border-top-style: solid;
+    border-top-width: 4px;
+    transition: transform .2s;
+    background-color: rgb(255, 255, 255);
+}
+
+.div-card0{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.container{
+    display: grid;
+    justify-items:center;
+    grid-template-columns: 610px 610px;
+    grid-template-rows: 150px 20px;
+    grid-template-areas: "card1 card1"
+                         "card2 card4"
+                         "card3 card3";
+   justify-content: center;
+   padding-bottom: 50px;
+
+}
+.div-card1{
+   grid-area: card1;
+   border-top-color: red;
+}
+.div-card1:hover, .div-card2:hover, .div-card3:hover, .div-card4:hover{
+   transform: scale(1.1);
+}
+.div-card2{
+    grid-area: card2;
+   border-top-color: rgb(9, 170, 149);
+   
+ }
+ .div-card3{
+    grid-area: card3;
+    margin-top: 5%;
+    border-top-color: rgb(223, 219, 10);
+ }
+ .div-card4{
+   border-top-color: rgb(38, 118, 194);
+ }
+ .div-card{
+    grid-area: card4;
+   
+ }
